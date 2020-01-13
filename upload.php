@@ -17,9 +17,9 @@
  $id = $row['id'];
  }
  
- $path = "uploads/$id.png";
+ $path = "img/$id.png";
  
- $actualpath = "https://servermorefast.webcindario.com/ImagenConNombre/$path";
+ $actualpath = "https://kekipost.azurewebsites.net/$path";
  
  $sql = "INSERT INTO frutas (foto,nombre) VALUES ('$actualpath','$nombre')";
  
