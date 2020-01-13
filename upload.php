@@ -21,7 +21,7 @@
  
  $actualpath = "https://kekipost.azurewebsites.net/$path";
  
- $sql = "INSERT INTO frutas (foto,nombre) VALUES ('$actualpath','$nombre')";
+ $sql = "INSERT INTO frutas (foto,nombre) VALUES ('$actualpath','$nombre')"; 
  
  if(mysqli_query($con,$sql)){
  file_put_contents($path,base64_decode($imagen));
